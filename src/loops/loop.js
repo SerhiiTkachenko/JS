@@ -29,13 +29,28 @@
 // };
 // console.log(smallestDivisor(121));
 
-const factorial = (n) => {
-    let result = 1;
+// const factorial = (n) => {
+//     let result = 1;
+//
+//     for (let index = 1; index <= n; index++) {
+//         result *= index;
+//     }
+//     return result;
+//
+// }
+// console.log(factorial(2));
 
-    for (let index = 1; index <= n; index++) {
-        result *= index;
+const isPrime = (number) => {
+  if (number <= 2) {
+    return false;
+  }
+
+  for (let i = 2; i < number; i += 1) {
+    if (number % i === 0) {
+      return false;
     }
-    return result;
+  }
 
-}
-console.log(factorial(2));
+  return true;
+};
+console.log(isPrime(2));
