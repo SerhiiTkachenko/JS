@@ -11,20 +11,31 @@
 
 // console.log(factorial(2));
 
-const smallestDivisor = (num) => {
-    if (num < 1) {
-        return NaN;
-    }
-    if (num === 1) {
-        return num;
-    }
+// const smallestDivisor = (num) => {
+//     if (num < 1) {
+//         return NaN;
+//     }
+//     if (num === 1) {
+//         return num;
+//     }
+//
+//     let divisor = 2;
+//
+//     while (num % divisor !== 0) {
+//         divisor = divisor + 1;
+//     }
+//
+//     return divisor;
+// };
+// console.log(smallestDivisor(121));
 
-    let divisor = 2;
+const factorial = (n) => {
+    let result = 1;
 
-    while (num % divisor !== 0) {
-        divisor = divisor + 1;
+    for (let index = 1; index <= n; index++) {
+        result *= index;
     }
+    return result;
 
-    return divisor;
-};
-console.log(smallestDivisor(121));
+}
+console.log(factorial(2));
