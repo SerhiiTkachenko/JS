@@ -24,16 +24,27 @@
 // };
 // console.log(reversed("sergio"));
 
-const reverse = (str) => {
-    let i = str.length - 1;
-    let result = '';
+// const reverse = (str) => {
+//     let i = str.length - 1;
+//     let result = '';
 
-    while (i >= 0) {
-        result = result + str[i];
-        i = i - 1;
+//     while (i >= 0) {
+//         result = result + str[i];
+//         i = i - 1;
+//     }
+
+//     return result;
+// };
+
+// console.log(reverse('hello, world!'));
+
+const factorial = (n) => {
+    let result = 1;
+
+    for (let index = 1; index <= n; index++) {
+        result *= index;
     }
-
     return result;
-};
 
-console.log(reverse('hello, world!'));
+}
+console.log(factorial(2));
