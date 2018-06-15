@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Changing attributes</title>
+</head>
+
+<body>
+    <h1 id="heading">All about dogs</h1>
+    <p>Lorem ipsum dolor <span class="animal">dog</span> sit amet, consectetur adipisicing elit. Iusto nulla qui soluta non veniam<span class="animal">dog</span> modi, voluptatem voluptatum ullam tempore, culpa totam! At dolores <span class="animal">dog</span>        corporis doloribus corrupti possimus, consequuntur <a href="https://en.wikipedia.org/wiki/Dog">Read more on wikipedia</a> laudantium! Voluptatibus?</p>
+    <img src="https://qph.fs.quoracdn.net/main-qimg-79622c4e1d027127e27b023e46d179cf-c" alt="dogSad" height="300px">
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROXmqsDKuGUy2tcrbddfIs5Bfqv-hVgXWP152vfX3tMd_orxYy2g" alt="puppySit" height="300px">
+
+    <script>
+        var headingEl = document.getElementById("heading");
+        console.log(headingEl);
+        headingEl.innerHTML = "All about cats";
+    </script>
+
+</body>
+
+</html>
