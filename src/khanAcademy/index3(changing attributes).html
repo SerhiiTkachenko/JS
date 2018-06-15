@@ -6,19 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Changing attributes</title>
+
+    <style>
+        p .animal {
+            color: red;
+        }
+
+        a[href*="Dog"] {
+            color: green;
+        }
+    </style>
 </head>
 
 <body>
     <h1 id="heading">All about dogs</h1>
-    <p>Lorem ipsum dolor <span class="animal">dog</span> sit amet, consectetur adipisicing elit. Iusto nulla qui soluta non veniam<span class="animal">dog</span> modi, voluptatem voluptatum ullam tempore, culpa totam! At dolores <span class="animal">dog</span>        corporis doloribus corrupti possimus, consequuntur <a href="https://en.wikipedia.org/wiki/Dog">Read more on wikipedia</a> laudantium! Voluptatibus?</p>
+    <p>Lorem ipsum dolor <span class="animal">dog</span> sit amet, consectetur adipisicing elit.
+        Iusto nulla qui soluta non veniam <span class="animal">dog</span> modi, voluptatem voluptatum ullam tempore,
+        culpa totam! At dolores <span class="animal">dog</span> corporis doloribus
+        corrupti possimus, consequuntur <a href="https://en.wikipedia.org/wiki/Dog">Read more on wikipedia</a>
+        laudantium! Voluptatibus?</p>
     <img src="https://qph.fs.quoracdn.net/main-qimg-79622c4e1d027127e27b023e46d179cf-c" alt="dogSad" height="300px">
 
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROXmqsDKuGUy2tcrbddfIs5Bfqv-hVgXWP152vfX3tMd_orxYy2g" alt="puppySit" height="300px">
 
     <script>
+        var imageEls = document.getElementsByTagName("img");
+        for (var i = 0; i < imageEls.length; i++) {
+            imageEls[i].src = "https://cdn.petcarerx.com/LPPE/images/articlethumbs/white-cats-Large.jpg";
+        }
+
         var headingEl = document.getElementById("heading");
         console.log(headingEl);
         headingEl.innerHTML = "All about cats";
+
+        var animalEle = document.getElementsByClassName("animal");
+        for (var j = 0; j < animalEle.length; j++) {
+            animalEle[j].innerHTML = "cat";
+        }
+
+
+        var linkEls = document.querySelectorAll("a[href*=\"Dog\"]");
+        for (var i = 0; i < linkEls.length; i++) {
+            linkEls[i].href = "https://en.wikipedia.org/wiki/Cat";
+        }
     </script>
 
 </body>
