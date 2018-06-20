@@ -48,10 +48,11 @@
         headingEl.className = "catcolors";
         headingEl.textContent = "All about cats";
 
-        // var animalEle = document.getElementsByClassName("animal");
-        // for (var j = 0; j < animalEle.length; j++) {
-        // }
-
+        //<img>
+        var catEl = document.createElement("img");
+        catEl.src = "https://cdn.petcarerx.com/LPPE/images/articlethumbs/white-cats-Large.jpg"
+        catEl.alt = "Photo of cute cat";
+        document.body.appendChild(catEl);
 
         var linkEls = document.querySelectorAll("a[href*=\"Dog\"]");
         for (var i = 0; i < linkEls.length; i++) {
@@ -60,7 +61,11 @@
 
         var nameEls = document.querySelectorAll("p .animal");
         for (var i = 0; i < nameEls.length; i++) {
-            nameEls[i].innerHTML = "<strong>cat</strong>";
+            var strongEl = document.createElement("strong");
+            var strongText = document.createTextNode("cat");
+            strongEl.appendChild(strongText);
+            nameEls[i].innerHTML = "";
+            nameEls[i].appendChild(strongEl);
             nameEls[i].className += " catcolors";
         }
     </script>
