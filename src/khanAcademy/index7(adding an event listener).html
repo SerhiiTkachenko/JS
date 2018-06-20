@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id = "heading">Boring webpage</h1>
+
+    <button id="clicker">Boring button</button>
+    <script>
+        // 1.Find and store the element we want to listen to events on.
+        var clickerButton = document.getElementById("clicker");
+        var clickerHeading = document.getElementById("heading");
+        // 2.Define the function that will respond to the event.
+        //callback function
+        var onButtonClick = function() {
+            clickerButton.textContent = "Oh wow, you clicked me!";
+        };
+        var onHeaderClick = function() {
+            clickerHeading.textContent = "Unboring webpage";
+        };
+
+        // 3.Add the event listener for the element and function.
+        clickerButton.addEventListener("click", onButtonClick);
+        clickerHeading.addEventListener("click", onHeaderClick);
+
+        // clickerButton.addEventListener("click", function() {
+        //     clickerButton.textContent = "Oh wow, you clicked me!";
+        // });
+
+    </script>
+</body>
+</html>
