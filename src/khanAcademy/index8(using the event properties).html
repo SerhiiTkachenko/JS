@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        .beard {
+            background: black;
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            border-radius: 4px;
+            top: 95px;
+            left: 32px;
+        }
+    </style>
+</head>
+<body>
+    <img id="face" src="https://vignette.wikia.nocookie.net/slangtalk/images/3/34/Lol-face-meme.jpg/revision/latest?cb=20111011215423" alt="Sticker">
+    <div id="message"></div>
+    <script>
+        // 1.Find and store the element we want to listen to events on.
+        var face = document.getElementById("face");
+        // 2.Define the function that will respond to the event.
+        //callback function
+        var onMouseMove = function(e) {
+            console.log(e);
+            document.getElementById("message").textContent += "lol ";
+            var beard = document.createElement("div");
+            beard.className = "beard";
+            document.body.appendChild(beard);
+            beard.style.top = e.clientY + "px";
+            beard.style.left = e.clientX + "px";
+
+        }
+        // 3.Add the event listener for the element and function.
+        face.addEventListener("mousemove", onMouseMove);
+    </script>
+</body>
+</html>
