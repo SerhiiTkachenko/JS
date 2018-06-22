@@ -1,0 +1,64 @@
+html {
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-image: url("https://www.htmlacademy.ru/assets/course9/grid.png");
+    background-repeat: repeat;
+    background-position: -80px -80px;
+}
+
+.scene {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    background: none;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+div {
+    display: inline-block;
+    background: white;
+}
+
+/* горизонтальные элементы */
+.h {
+    width: 50px;
+    height: 10px;
+}
+
+.h3 {
+    width: 40px;
+}
+
+/* вертикальные элементы */
+.v {
+    width: 10px;
+    height: 50px;
+}
+
+/* уголки */
+.corner-top {
+    border: 15px solid white;
+    border-top-width: 20px;
+    border-bottom-width: 0;
+    border-top-color: transparent;
+    background: none;
+}
+
+.corner-bottom {
+    border: 15px solid transparent;
+    border-top-width: 20px;
+    border-bottom-width: 0;
+    border-top-color: white;
+    background: none;
+}
+
+/* лого */
+.logo {
+    width: 64px;
+    height: 64px;
+    background: url('https://www.htmlacademy.ru/assets/course10/logo.png');
+}
