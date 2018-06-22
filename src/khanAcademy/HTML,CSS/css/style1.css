@@ -1,0 +1,46 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 500px;
+    min-height: 270px;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    color: rgb(208, 226, 209);
+    background-color: rgba(151, 154, 247, 0.31);
+    background-image: url("https://www.htmlacademy.ru/assets/course9/grid.png");
+    background-repeat: repeat;
+    background-position: -80px -80px;
+}
+.table {
+    border-collapse: collapse;
+}
+.column {
+    width: 100px;
+    border: 2px solid white;
+    background: rgba(0, 255, 255, 0.2);
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    margin: 0 10px 10px 0;
+}
+.row {
+    display: table-row;
+}
+.cell {
+    width: 118px;
+    display: table-cell;
+    box-sizing: border-box;
+    border: 2px solid white;
+    padding: 5px 10px;
+    background: rgba(0, 255, 255, 0.2);
+}
+
+.col-3 {
+    display: none;
+}
