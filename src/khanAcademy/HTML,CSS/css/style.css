@@ -1,0 +1,31 @@
+div {
+    margin: 5px;
+    padding: 5px;
+    border: 1px dotted black;
+}
+h1 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.table {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    background: rgb(208, 158, 48);
+    border-color: rgb(68, 95, 187);
+    padding: 0px;
+    border-spacing: 5px;
+}
+.row {
+    display: table-row;
+    background: rgb(122, 212, 111);
+    border-color: blue;
+}
+.cell {
+    display: table-cell;
+    background: rgb(215, 219, 22);
+    border-color: rgba(24, 156, 213, 0.55);
+}
