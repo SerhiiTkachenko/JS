@@ -1,0 +1,23 @@
+html,body {
+    margin: 0;
+    background: #ccc;
+}
+
+.parent {
+    max-width: 1024px;
+    margin: 50px auto 0;
+    padding: 20px 40px;
+    background: #aaa;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.sizes {
+    box-sizing: border-box;
+    background: rgb(23, 209, 19);
+    width: 300px;
+    height: 300px;
+    margin: 20px 10px;
+    padding: 20px;
+    border: 5px solid #50d ;
+}
