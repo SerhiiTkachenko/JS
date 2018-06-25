@@ -8,7 +8,7 @@
 </head>
 <body>
     <div>
-        <label>What's your name
+        <label>What's your name?
             <input id="name" type="text">
         </label>
         <br />
@@ -21,6 +21,29 @@
             </select>
         </label>
         <br />
+        <button id="button" type="button">Greet me, please!</button>
+        <div id="message"></div>
     </div>
+    <script>
+        // 1.Find and store the element we want to listen to events on.
+        var button = document.getElementById('button');
+        // 2.Define the event listener function
+        var onButtonClick = function() {
+            var name = document.getElementById('name').value;
+            var lang = document.getElementById('lang').value;
+            var greeting;
+            if (lang === "es") {
+                 greeting = "Hola, " + name;
+            } else if (lang === "pl") {
+                greeting = "Heyah, " + name;
+            } else {
+                greeting = "Hello, " + name;
+            }
+
+            document.getElementById('message').textContent += greeting + " ";
+        };
+        // 3.Attach the event listener to element.
+        button.addEventListener('click', onButtonClick);
+    </script>
 </body>
 </html>
