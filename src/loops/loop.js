@@ -40,17 +40,17 @@
 // }
 // console.log(factorial(2));
 
-const isPrime = (number) => {
-  if (number <= 2) {
-    return false;
-  }
+// const isPrime = (number) => {
+//   if (number <= 2) {
+//     return false;
+//   }
 
-  for (let i = 2; i < number; i += 1) {
-    if (number % i === 0) {
-      return false;
-    }
-  }
+//   for (let i = 2; i < number; i += 1) {
+//     if (number % i === 0) {
+//       return false;
+//     }
+//   }
 
-  return true;
-};
-console.log(isPrime(2));
+//   return true;
+// };
+// console.log(isPrime(2));
