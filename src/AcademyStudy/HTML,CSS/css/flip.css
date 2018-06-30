@@ -9,3 +9,12 @@ body {
     top: 0;
     background-color: #BBDEFB;
 }
+
+.card {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+}
+.front, .back {
+    border: 1px solid grey;
+}
