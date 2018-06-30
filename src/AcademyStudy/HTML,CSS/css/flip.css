@@ -41,3 +41,4 @@ body {
     /* border: 1px solid blue; */
 }
 .card:hover .front {transform: rotateY(180deg);}
+.card:hover .back {transform: rotateY(360deg);}
