@@ -7,4 +7,4 @@
 
 ### Just visit this `link:` (https://serhiitkachenko.github.io/learning-features-of-js/src/AcademyStudy/HTML%2CCSS/index5(flip3Dcard).html) :dash:
 
-:sparkles: **StudyJS!** :sparkles:
+:sparkles: **StudyJavaScript!** :sparkles:
