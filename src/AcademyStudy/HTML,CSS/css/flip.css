@@ -8,6 +8,9 @@ body {
     left: 0;
     top: 0;
     background-color: #BBDEFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
@@ -15,6 +18,9 @@ body {
     height: 300px;
     border: 1px solid red;
 }
-.front, .back {
+.front{
     border: 1px solid grey;
+}
+.back {
+    border: 1px solid blue;
 }
