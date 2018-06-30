@@ -28,10 +28,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 1s;
+    backface-visibility: hidden;
 }
 .front {
+    background-color: white;
     /* border: 2px dotted white; */
 }
 .back {
+    background-color: #BDBDBD;
+    transform: rotateY(180deg);
     /* border: 1px solid blue; */
 }
+.card:hover .front {transform: rotateY(180deg);}
