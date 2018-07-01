@@ -1,0 +1,14 @@
+
+
+.grid div {
+    background-color: #BDBD;
+    border: 1px solid #2129;
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(19, 35, 176);
+    font-weight: bold;
+    font-size: 17px;
+}
+.grid div:nth-last-child(odd) {
+    background-color: rgba(1, 66, 6, 0.31);
+}
