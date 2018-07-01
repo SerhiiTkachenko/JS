@@ -1,10 +1,17 @@
-
+.grid {
+    display: grid;
+    grid-template-columns: 190px 190px 190px;
+    grid-template-rows: 150px 150px;
+    grid-auto-rows: 90px;
+    grid-gap: 20px;
+}
 
 .grid div {
     background-color: #BDBD;
     border: 1px solid #2129;
     border-radius: 5px;
     padding: 10px;
+    text-align: center;
     color: rgb(19, 35, 176);
     font-weight: bold;
     font-size: 17px;
