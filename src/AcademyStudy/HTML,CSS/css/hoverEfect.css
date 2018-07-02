@@ -13,7 +13,8 @@
     height: 300px;
     background-color: rgb(205, 209, 14);
     margin: 0px 10px;
-    transition: 1s;
+    transition: width 1s, height 1s, transform 1s;
+    /* transition: 1s; */
     border: 1px solid rgb(205, 209, 14);
     border-radius: 4px;
 }
