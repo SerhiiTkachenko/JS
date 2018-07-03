@@ -6,7 +6,7 @@ body {
     color: #fff;
     padding: 10px;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 .telegram-logo {
     height: 40px;
@@ -35,4 +35,14 @@ body {
 }
 .story-text {
     margin: 0 10px;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FF3933;
+    height: 50px;
+    color: white;
+    text-align: center;
 }
