@@ -24,6 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .story-image-wrapper {
@@ -45,4 +46,57 @@ body {
     height: 50px;
     color: white;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+/* main-page */
+#coolLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    color: black;
+    position: relative;
+}
+.text-center {
+    text-align: center;
+}
+#coolLogo .main-logo {
+    height: 100px;
+    width: 100px;
+    border-top: 5px solid grey;
+    transform: rotate(180deg);
+}
+#coolLogo .main-logo:hover {
+    height: 100px;
+    width: 100px;
+    border-top: hidden;
+    border-bottom: 5px solid grey;
+    transition: .3s;
+    transform: rotate(360deg);
+}
+.line {
+    background: grey;
+    height: 10px;
+    width: calc(50% - 50px);
+}
+
+.right-arrow, .left-arrow {
+    height: 50px;
+    width: calc(50% - 50px);
+    position: absolute;
+    bottom: 0;
+    background-color: darkgray;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+.left-arrow {
+    left: 0;
 }
