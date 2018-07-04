@@ -1,0 +1,31 @@
+body {
+    margin: 100px auto;
+}
+
+.parent{
+    border: 5px solid lightcoral;
+}
+
+.item{
+    height: 50px;
+    background: DeepSkyBlue;
+    color: white;
+    text-align: center;
+    margin: 5px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+/***Flex BOX ***/
+
+.parent {
+    height: 200px;
+    display: flex;
+}
+
+.item {
+    width: 170px;
+}
+.item:nth-child(2) {
+    align-self: flex-end;
+}
