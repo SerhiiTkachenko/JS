@@ -118,10 +118,14 @@ body {
 
 @media all and (max-width: 640px) {
     .header {
-        -webkit-flex-flow: column;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        display: block;
+        text-align: center;
+    }
+    .header-section {
+        display: block;
+    }
+    .header-logo {
+        display: none;
     }
     .main {
         -webkit-flex-flow: column;
