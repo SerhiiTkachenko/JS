@@ -31,7 +31,7 @@ body {
      color: #D9E9EF;
 }
 .header-logo {
-    font-size: 40px;
+    font-size: 30px;
     margin-right: 10px;
     color: white;
 }
@@ -44,6 +44,11 @@ body {
 }
 .is-header-section-item-selected {
     color: #FFFFFF;
+    background-color: #415F69;
+    border-radius: 3px;
+}
+.is-header-section-item-selected:hover {
+    color: rgb(196, 23, 43);
     background-color: #415F69;
     border-radius: 3px;
 }
