@@ -117,6 +117,12 @@ body {
 }
 
 @media all and (max-width: 640px) {
+    .header {
+        -webkit-flex-flow: column;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .main {
         -webkit-flex-flow: column;
         flex-direction: column;
@@ -125,7 +131,7 @@ body {
         -webkit-order: 0;
         order: 0;
     }
-    .main-nav, .main-aside, .header, .footer {
+    .main-nav, .main-aside, .footer {
         min-height: 50px;
         max-height: 50px;
     }
