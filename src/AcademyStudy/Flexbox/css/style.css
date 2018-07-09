@@ -31,7 +31,7 @@ body {
      color: #D9E9EF;
 }
 .header-logo {
-    font-size: 40px;
+    font-size: 30px;
     margin-right: 10px;
     color: white;
 }
@@ -44,6 +44,11 @@ body {
 }
 .is-header-section-item-selected {
     color: #FFFFFF;
+    background-color: #415F69;
+    border-radius: 3px;
+}
+.is-header-section-item-selected:hover {
+    color: rgb(196, 23, 43);
     background-color: #415F69;
     border-radius: 3px;
 }
@@ -112,6 +117,12 @@ body {
 }
 
 @media all and (max-width: 640px) {
+    .header {
+        -webkit-flex-flow: column;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .main {
         -webkit-flex-flow: column;
         flex-direction: column;
@@ -120,7 +131,7 @@ body {
         -webkit-order: 0;
         order: 0;
     }
-    .main-nav, .main-aside, .header, .footer {
+    .main-nav, .main-aside, .footer {
         min-height: 50px;
         max-height: 50px;
     }
