@@ -118,11 +118,10 @@ body {
 
 @media all and (max-width: 640px) {
     .header {
-        display: block;
-        text-align: center;
+        flex-direction: column;
     }
     .header-section {
-        display: block;
+        flex-direction: column;
     }
     .header-logo {
         display: none;
