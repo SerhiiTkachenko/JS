@@ -27,17 +27,45 @@
     </header>
     <main class="main">
         <article class="main-article">Article</article>
-        <nav class="main-nav">Nav</nav>
+        <nav class="main-nav">
+             <!-- This section gets pushed to the top-->
+            <div class="sideBar-section">
+                <div class="sideBar-item is-sideBar-item-selected">Lorem</div>
+                <div class="sideBar-item">Lorem</div>
+                <div class="sideBar-item">Lorem</div>
+            </div>
+             <!-- This section gets pushed to the bottom-->
+            <div class="sideBar-section">
+                <div class="sideBar-item">Lorem</div>
+                <div class="sideBar-item">Lorem</div>
+                <div class="sideBar-item">Lorem</div>
+            </div>
+            <div class="sideBar-section">
+                <div class="sideBar-item">Lorem</div>
+                <div class="sideBar-item">Lorem</div>
+                <div class="sideBar-item">Lorem</div>
+            </div>
+        </nav>
         <aside class="main-aside">Aside</aside>
     </main>
     <footer class="footer">Footer</footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script type="text/javascript">
+
     var $siteHeaderItems = $('.header .header-section-item');
     $siteHeaderItems.click((event) => {
     var selectedClass = 'is-header-section-item-selected';
     $siteHeaderItems.removeClass(selectedClass);
     $(event.target).addClass(selectedClass);
+    });
+
+    var $sideBarItems = $('.sideBar-section .sideBar-item');
+
+    $sideBarItems.click(function(event) {
+      var selectedClass = 'is-sideBar-item-selected';
+      $sideBarItems.removeClass(selectedClass);
+      $(event.target).addClass(selectedClass);
     });
     </script>
 </body>
