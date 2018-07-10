@@ -17,6 +17,5 @@
   
   [logo](https://serhiitkachenko.github.io/learning-features-of-js/src/AcademyStudy/HTML%2CCSS/main-page.html) :shipit:
   
-  <a href="http://example.com/" target="_blank">example</a>
 
 :sparkles: **StudyJavaScript!** :sparkles:
