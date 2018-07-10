@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #f3f3f3;
+}
+body {
+    font: normal 14px sans-serif;
+}
+.container {
+    max-width:1200px;
+    display: flex;
+	margin: 0 auto;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+section {
+    margin-bottom: 20px;
+}
+/*Header*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #1f1f1f;
+    border: 1px solid #1f1f1f;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+}
+
+.header-section-button {
+    cursor: pointer;
+}
+.header-logo {
+    font-size: 30px;
+    margin-right: 10px;
+    color: rgb(21, 52, 185);
+}
+.header-section-item {
+    padding: 5px 15px;
+    font-size: 16px;
+}
+
+.header-section-item + .header-section-item {
+    margin-left: 6px;
+}
+/*SideBAr*/
+.main {
+    -webkit-flex-grow:1;
+	flex-grow:1;
+    background-color: #fff;
+    padding: 40px 100px 40px 40px;
+    line-height: 1.5;
+}
+.main h1 {
+    margin-bottom: 28px;
+    font-size: 24px;
+}
+.main p {
+    margin-bottom: 24px;
+}
+.right-sideBar {
+    -webkit-flex-shrink:0;
+	flex-shrink:0;
+	/* width:280px; */
+}
+/*Main*/
+.main .wireframe-box{
+	background-color:#e2e2e2;
+	padding:200px 0;
+	text-align: center;
+	margin-bottom: 24px;
+}
+.right-sideBar {
+	background-color:#292c2f;
+	color:#fff;
+	padding:20px;
+}
+.right-sideBar .wireframe-box{
+	background-color: #37393C;
+	margin-top:20px;
+	padding:50px;
+    text-align: center;
+}
+.right-sideBar .wireframe-box.double{
+	padding:100px;
+}
+/*Footer*/
+.footer {
+    width: 770px;
+	font: normal 16px Arial, Helvetica, sans-serif;
+	padding: 15px 35px;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	margin-left: -437px;
+
+	background-color:#1f1f1f;
+	background-image:linear-gradient(to bottom, #1f1f1f, #101010);
+
+	border-radius:2px 2px 0 0;
+	box-shadow: 0 -1px 4px rgba(0,0,0,0.4);
+	z-index:1;
+}
+
+footer a.tz{
+	font-weight:normal;
+	font-size:16px !important;
+	text-decoration:none !important;
+	display:block;
+	margin-right: 300px;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	color:#bfbfbf !important;
+	z-index:1;
+}
+
+footer a.tz:before{
+	content: '';
+	background: url('http://cdn.tutorialzine.com/misc/enhance/v2_footer_bg.png') no-repeat 0 -53px;
+	width: 138px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+	bottom: -3px;
+}
+
+footer .close{
+	position: absolute;
+	cursor: pointer;
+	width: 8px;
+	height: 8px;
+	background: url('http://cdn.tutorialzine.com/misc/enhance/v2_footer_bg.png') no-repeat 0 0px;
+	top:10px;
+	right:10px;
+	z-index: 3;
+}
+
+footer #tzine-actions{
+	position: absolute;
+	top: 8px;
+	width: 500px;
+	right: 50%;
+	margin-right: -650px;
+	text-align: right;
+	z-index: 2;
+}
+
+footer #tzine-actions iframe{
+	display: inline-block;
+	height: 21px;
+	width: 95px;
+	position: relative;
+	float: left;
+	margin-top: 11px;
+}
+
+@media (max-width: 1024px) {
+	#bsaHolder, footer{ display:none;}
+}
+
+/*Media*/
+@media all and (max-width: 800px) {
+
+	/* On small screens, make elements show one beneath the other */
+    .header-section {
+        flex-direction: column;
+    }
+    .header-logo {
+        display: none;
+    }
+
+	.container {
+		-webkit-flex-flow:column;
+		flex-flow:column;
+	}
+
+	/* Also make the sidebar take the entire width of the screen */
+
+	.right-sidebar{
+		width:auto;
+	}
+
+	.main{
+		padding-right:40px;
+	}
+}
