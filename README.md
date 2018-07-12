@@ -9,7 +9,7 @@
 
   [FlexBox](https://serhiitkachenko.github.io/learning-features-of-js/src/AcademyStudy/Flexbox/index.html)  :milky_way:
   
-  [FlexBox](https://serhiitkachenko.github.io/learning-features-of-js/src/AcademyStudy/Flexbox/index2.html)  :ear_of_rice:
+  [FlexBox](https://serhiitkachenko.github.io/learning-features-of-js/src/AcademyStudy/Flexbox/index2.html)   :fish:
 
   [flipCard](https://serhiitkachenko.github.io/learning-features-of-js/src/AcademyStudy/HTML%2CCSS/index5(flip3Dcard).html) :dash:
 
