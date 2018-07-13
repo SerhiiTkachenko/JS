@@ -8,9 +8,13 @@ p {
     letter-spacing: 2px;
     padding-top: 10px;
 }
+.example-bs [class^="row align-items-"], .example-bs.example-flex .row+.row {
+    min-height: 10rem;
+    background-color: #a3a8ba;
 
+}
 
-div[class^=col]{
+.row>[class^=col]{
     background: #8CC7D9;
     border: 1px solid #6B6ACD;
     text-align: center;
