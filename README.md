@@ -11,7 +11,7 @@
   
   [FlexBox2](https://serhiitkachenko.github.io/learning-features-of-front-end/src/AcademyStudy/Flexbox/index2.html)   :fish:
   
-  [Bootstrap 4](https://serhiitkachenko.github.io/learning-features-of-front-end/src/AcademyStudy/Bootstrap/index1.html)  :dragon:
+  [Bootstrap 4](https://serhiitkachenko.github.io/learning-features-of-front-end/src/AcademyStudy/Bootstrap 4/index1.html)  :dragon:
 
   [flipCard](https://serhiitkachenko.github.io/learning-features-of-front-end/src/AcademyStudy/HTML%2CCSS/index5(flip3Dcard).html) :dash:
 
