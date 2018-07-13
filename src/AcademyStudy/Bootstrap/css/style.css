@@ -1,9 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-top: 10px;
+}
+
 
 div[class^=col]{
     background: #8CC7D9;
     border: 1px solid #6B6ACD;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
     vertical-align: middle;
     line-height: 70px;
    }
