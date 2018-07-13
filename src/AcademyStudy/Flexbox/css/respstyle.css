@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
 }
-.header, .footer {
+.header{
     background-color: #e2e2e2;
     padding: 30px;
 }
@@ -34,6 +34,7 @@
 .main-flex {
     display: flex;
     justify-content: space-between;
+
 }
 
 ul li {
@@ -80,4 +81,11 @@ ul li a {
     margin: 10px;
     width: 280px;
     background-color: #e2e2e2
+}
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #e2e2e2;
+    padding: 30px;
 }
