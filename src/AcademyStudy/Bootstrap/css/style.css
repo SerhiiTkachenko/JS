@@ -2,4 +2,8 @@
 div[class^=col]{
     background: #8CC7D9;
     border: 1px solid #6B6ACD;
+    text-align: center;
+    margin-top: 10px;
+    vertical-align: middle;
+    line-height: 70px;
    }
