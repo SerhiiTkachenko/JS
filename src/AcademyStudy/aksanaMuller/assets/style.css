@@ -34,3 +34,8 @@ html,body {
 .padding-top {
     padding-top: 250px;
 }
+.vertical-hr {
+    margin-right: 15px;
+    text-align: center;
+    border-left: 1px solid silver;
+}
