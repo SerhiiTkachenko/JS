@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+html,body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins',sans-serif;
+    color: #222;
+}
+.navbar {
+    padding: .8rem;
+}
+.navbar-nav li {
+    padding-right: 20px;
+}
+.nav-link {
+    font-size: 1.1em !important;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+.carousel-caption {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+.carousel-caption h1 {
+    font-size: 500%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px #000;
+}
+[class*="col-"] {
+    padding: 1rem;
+}
+.padding-top {
+    padding-top: 250px;
+}
+.vertical-hr {
+    margin-right: 15px;
+    text-align: center;
+    border-left: 1px solid silver;
+}
+/* ANGEBOTE */
+
+.project-title {
+    font-size: 72px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #837880;
+}
+
+#angebote {
+    margin-bottom: 100px;
+}
+
+.angebote-item {
+    width: 20%;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+.angebote-item div:first-child {
+    margin-bottom: 30px;
+}
+/*  */
+.project-button {
+    font-size: 24px;
+    padding: 26px;
+    width: 303px;
+    border-top: 1.5px solid #837880;
+    border-bottom: 1.5px solid #837880;
+    border-left: 1.5px solid transparent;
+    border-right: 1.5px solid transparent;
+    transition: border 0.3s ease-in-out;
+    background: transparent;
+    color: #837880;
+}
+
+.project-button:hover {
+    border-left: 1.5px solid #837880;
+    border-right: 1.5px solid #837880;
+    color: #837880;
+}
