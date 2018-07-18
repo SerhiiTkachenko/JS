@@ -26,5 +26,7 @@
   
   [logo](https://serhiitkachenko.github.io/learning-features-of-front-endsrc/AcademyStudy/HTML%2CCSS/main-page.html) :shipit:
   
+  [OOPPresentation](http://taylorhakes.com/javascript-oop-presentation/#/)  :suspect:
+ 
 
 :sparkles: **Study Front-End!** :sparkles:
