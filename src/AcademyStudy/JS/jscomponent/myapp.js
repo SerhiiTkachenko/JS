@@ -12,21 +12,27 @@
 // }
 // document.write( makeCoffee(sugar, milk) );
 
-var car = {
-  make: "volvo",
-  speed: 160,
-  engine: {
-      size: 2.0,
-      make: "bmw",
-      fuel: "petrol",
-      pistons: [ {maker: "BMW"}, {maker: "BMW"} ]
-  },
-  drive: function(){return "drive";}
-};
-var array = [
-    "string",
-    100,
-    ["embeded", 200],
-    {car: "ford"},
-    function(){return "drive";}
-]
+// var car = {
+//   make: "volvo",
+//   speed: 160,
+//   engine: {
+//       size: 2.0,
+//       make: "bmw",
+//       fuel: "petrol",
+//       pistons: [ {maker: "BMW"}, {maker: "BMW"} ]
+//   },
+//   drive: function(){return "drive";}
+// };
+// var array = [
+//     "string",
+//     100,
+//     ["embeded", 200],
+//     {car: "ford"},
+//     function(){return "drive";}
+// ]
+var n = prompt('Enter value for varification');
+
+function isNumeric(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n);
+}
+alert(isNumeric(n));
