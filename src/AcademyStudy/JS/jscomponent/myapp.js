@@ -30,9 +30,14 @@
 //     {car: "ford"},
 //     function(){return "drive";}
 // ]
-var n = prompt('Enter value for varification');
+// var n = prompt('Enter value for varification');
 
-function isNumeric(n) {
-    return !isNaN(parseFloat(n)) && isFinite(n);
-}
-alert(isNumeric(n));
+// function isNumeric(n) {
+//     return !isNaN(parseFloat(n)) && isFinite(n);
+// }
+// alert(isNumeric(n));
+
+// var price1 = 0.1;
+// var price2 = 0.2;
+
+// alert( +(price1 + price2).toFixed(2));
