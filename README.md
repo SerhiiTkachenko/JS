@@ -1,3 +1,5 @@
+:sparkles: **Study Front-End!** :sparkles:
+
 ## This folder contains:
 
   - `[JavaScript]`
@@ -29,4 +31,3 @@
   [OOPPresentation](http://taylorhakes.com/javascript-oop-presentation/#/)  :suspect:
  
 
-:sparkles: **Study Front-End!** :sparkles:
