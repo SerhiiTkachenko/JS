@@ -12,28 +12,17 @@
 // }
 // document.write( makeCoffee(sugar, milk) );
 
-// var car = {
-//   make: "volvo",
-//   speed: 160,
-//   engine: {
-//       size: 2.0,
-//       make: "bmw",
-//       fuel: "petrol",
-//       pistons: [ {maker: "BMW"}, {maker: "BMW"} ]
-//   },
-//   drive: function(){return "drive";}
-// };
 // var array = [
-//     "string",
-//     100,
-//     ["embeded", 200],
+    //     "string",
+    //     100,
+    //     ["embeded", 200],
 //     {car: "ford"},
 //     function(){return "drive";}
 // ]
 // var n = prompt('Enter value for varification');
 
 // function isNumeric(n) {
-//     return !isNaN(parseFloat(n)) && isFinite(n);
+    //     return !isNaN(parseFloat(n)) && isFinite(n);
 // }
 // alert(isNumeric(n));
 
@@ -44,6 +33,18 @@
 
 // var i = 0;
 // while (i < 11) {
-//   i += 0.2;
+    //   i += 0.2;
 //   if (i > 9.8 && i < 10.2) alert( i );
 // }
+var car = {
+    make: "volvo",
+    speed: 160,
+    engine: {
+        size: 2.0,
+        make: "bmw",
+        fuel: "petrol",
+        pistons: [ {maker: "BMW"}, {maker: "BMW"} ]
+    },
+    drive: function(){return "drive";}
+};
+console.log(car.engine.pistons[0].maker);
