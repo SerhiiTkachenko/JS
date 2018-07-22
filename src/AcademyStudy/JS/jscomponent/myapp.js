@@ -2,7 +2,7 @@
 // var milk = prompt("how many percent of milk, do you want?");
 
 // function makeCoffee( sugar, milk ) {
-//     var instructions = "Boil water,"; 
+    //     var instructions = "Boil water,"; 
 //     instructions += " pour into coup"; 
 //     instructions += " add coffee granules"; 
 //     instructions += " add coffee granules"; 
@@ -12,20 +12,13 @@
 // }
 // document.write( makeCoffee(sugar, milk) );
 
-// var array = [
-    //     "string",
-    //     100,
-    //     ["embeded", 200],
-//     {car: "ford"},
-//     function(){return "drive";}
-// ]
-// var n = prompt('Enter value for varification');
 
+// var n = prompt('Enter value for varification');
 // function isNumeric(n) {
     //     return !isNaN(parseFloat(n)) && isFinite(n);
-// }
-// alert(isNumeric(n));
-
+    // }
+    // alert(isNumeric(n));
+    
 // var price1 = 0.1;
 // var price2 = 0.2;
 
@@ -47,4 +40,11 @@ var car = {
     },
     drive: function(){return "drive";}
 };
-console.log(car.engine.pistons[0].maker);
+
+    var array = [
+            "string",
+            100,
+            ["embeded", 200],
+        {car: "ford"},
+        function(){return "drive";}
+    ]
