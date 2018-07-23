@@ -29,22 +29,38 @@
     //   i += 0.2;
 //   if (i > 9.8 && i < 10.2) alert( i );
 // }
-var car = {
-    make: "volvo",
-    speed: 160,
-    engine: {
-        size: 2.0,
-        make: "bmw",
-        fuel: "petrol",
-        pistons: [ {maker: "BMW"}, {maker: "BMW"} ]
-    },
-    drive: function(){return "drive";}
-};
+// var car = {
+//     make: "volvo",
+//     speed: 160,
+//     engine: {
+//         size: 2.0,
+//         make: "bmw",
+//         fuel: "petrol",
+//         pistons: [ {maker: "BMW"}, {maker: "BMW"} ]
+//     },
+//     drive: function(){return "drive";}
+// };
 
-    var array = [
-            "string",
-            100,
-            ["embeded", 200],
-        {car: "ford"},
-        function(){return "drive";}
-    ]
+//     var array = [
+//             "string",
+//             100,
+//             ["embeded", 200],
+//         {car: "ford"},
+//         function(){return "drive";}
+//     ]
+
+function print_object(obj) {
+    var res = '<ul>';
+
+    for(i in obj){
+        res += '<li><b>' + i + '</b>' + obj[i] + '</li>';
+    }
+    res += '</ul>'
+    document.write(res);
+}
+var text = document.querySelector('#numberToSquare');
+print_object(numberToSquare);
+
+function pow2() {
+    alert(document.getElementById("numberToSquare").value * document.getElementById("numberToSquare").value);
+}
