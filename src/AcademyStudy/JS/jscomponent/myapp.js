@@ -49,18 +49,51 @@
 //         function(){return "drive";}
 //     ]
 
-function print_object(obj) {
-    var res = '<ul>';
+// function print_object(obj) {
+//     var res = '<ul>';
 
-    for(i in obj){
-        res += '<li><b>' + i + '</b>' + obj[i] + '</li>';
+//     for(i in obj){
+//         res += '<li><b>' + i + '</b>: ' + obj[i] + '</li>';
+//     }
+//     res += '</ul>'
+//     document.write(res);
+// }
+// // print_object(textJs);
+
+// var text = document.querySelector('#textJs');
+
+// text.onclick = function() {
+//     text.innerHTML= 'Javascript Native';
+//     text.className = 'test';
+//     text.style.color = "red";
+// }
+
+// function pow2() {
+//     alert(document.getElementById("numberToSquare").value * document.getElementById("numberToSquare").value);
+// }
+
+var btn_prev = document.querySelector('#gallery .buttons .prev');
+var btn_next = document.querySelector('#gallery .buttons .next');
+
+var images = document.querySelectorAll('#gallery .images img');
+
+var i = 0;
+
+btn_prev.onclick = function() {
+    images[i].className = '';
+    i--;
+
+    if(i < 0) {
+        i = images.length - 1;
     }
-    res += '</ul>'
-    document.write(res);
+    images[i].className = 'showed';
 }
-var text = document.querySelector('#numberToSquare');
-print_object(numberToSquare);
+btn_next.onclick = function() {
+    images[i].className = '';
+    i++;
 
-function pow2() {
-    alert(document.getElementById("numberToSquare").value * document.getElementById("numberToSquare").value);
+    if(i >= images.length) {
+        i = 0;
+    }
+    images[i].className = 'showed';
 }
