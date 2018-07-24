@@ -41,3 +41,14 @@ body,html {
     text-transform: uppercase;
     border: 5px solid #ccff;
 }
+.item {
+    width: 33%;
+    background: #9929;
+    border: 1px solid #ff2;
+    padding: 20px;
+}
+.item-active {
+    border: 3px dotted #f8d8;
+    background: #fff;
+    text-align: center;
+}
