@@ -97,3 +97,27 @@ btn_next.onclick = function() {
     }
     images[i].className = 'showed';
 }
+
+window.onload = function() {
+    var div = document.querySelector('#items .item');
+    var timer = new timerOn(10,div);
+
+    setInterval(function(){
+        timer.tick();
+    }, 1000);
+     
+    function timerOn(time, elem) {
+        this.time = time;
+        this.elem = elem;
+
+        this.tick = function() {
+            this.time--;
+            this.elem.innerHTML = this.time;
+            if(this.time < 0){
+                this.time = 0;
+                alert('stop');
+            }
+        }
+    }
+}
+
