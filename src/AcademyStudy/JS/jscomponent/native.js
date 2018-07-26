@@ -217,9 +217,36 @@ try {
 }catch(e) {
     console.log(e);
 }
+console.log('______************************************************________')
+try {
+    console.log('Start of try runs');
 
+    unicycle;
 
+    console.log('End of try runs -- never reached');
 
+}catch(err) {
+    console.log('Error has occured: ' + err.stack);
+} finally {
+    console.log('This is always run');
+}
+
+console.log('...Then the execution continues');
+
+console.log('______************************************************________')
+
+let json = '{ "age": 30 }';
+
+try {
+    let user = JSON.parse(json);
+    if(!user.name) {
+        throw new SyntaxError("Incomplete data: no name");
+    }
+    
+    console.log( user.name );
+}catch(er) {
+    console.log( "JSON EROR: " + er );
+}
 
 
 
