@@ -79,3 +79,12 @@ html,body {
     border-right: 1.5px solid #837880;
     color: #837880;
 }
+.block1,
+.block2,
+.block3 {
+    min-height: 230px;
+    min-width: 450px;
+}
+.block1{
+    background-color: #d1b4b6;
+}
