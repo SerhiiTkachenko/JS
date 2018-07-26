@@ -107,9 +107,26 @@ switch (new Date().getDay()) {
         day = "Saturday";
     
 }
-
 console.log(day);
 
+// var Animal = prompt('Enter animal like cow,giraffe,monkey..,do not enter a number','giraffe');
+var Animal = 'Cow';
+
+switch(Animal) {
+    case'Cow':
+    case'giraffe':
+    case'Monkey':
+    case'Rabbit':
+    case'Lion':
+        console.log('This animal will go home.');
+        break;
+    case 'Spoon':
+        console.log('A spoon is not an animal!');
+        break;
+    case 'Dinosaur':
+    default:
+        console.log('This animal won\'t go home');        
+}
 
 
 
