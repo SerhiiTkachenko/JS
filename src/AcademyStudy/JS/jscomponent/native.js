@@ -178,6 +178,7 @@ switch (new Date().getDay()) {
     
 }
 console.log(day);
+document.querySelector('#test').innerHTML = "It is " + day;
 
 // var Animal = prompt('Enter animal like cow,giraffe,monkey..,do not enter a number','giraffe');
 var Animal = 'Cow';
@@ -198,12 +199,54 @@ switch(Animal) {
         console.log('This animal won\'t go home');        
 }
 
+console.log('______#####________')
+//Eror handling
+function takeDay(dayVar) {
+    const dayIndex = dayVar - 1;
 
+    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    if (days[dayIndex]) {
+        return days[dayIndex];
+    }else {
+        throw 'Invalid day index';
+    }
+}
 
+try {
+    const dayName = takeDay(22);
+}catch(e) {
+    console.log(e);
+}
+console.log('______************************************************________')
+try {
+    console.log('Start of try runs');
 
+    unicycle;
 
+    console.log('End of try runs -- never reached');
 
+}catch(err) {
+    console.log('Error has occured: ' + err.stack);
+} finally {
+    console.log('This is always run');
+}
 
+console.log('...Then the execution continues');
+
+console.log('______************************************************________')
+
+let json = '{ "age": 30 }';
+
+try {
+    let user = JSON.parse(json);
+    if(!user.name) {
+        throw new SyntaxError("Incomplete data: no name");
+    }
+    
+    console.log( user.name );
+}catch(er) {
+    console.log( "JSON EROR: " + er );
+}
 
 
 
