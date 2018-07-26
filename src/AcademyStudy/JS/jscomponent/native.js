@@ -1,3 +1,5 @@
+ 
+/*VARIABLES*/ 
 //var
 var message;
 message = 'Hello world';
@@ -21,3 +23,6 @@ const user = {
     name: 'Jhon',
     age:24
 };
+
+const GRAY = '#ccc';
+/*TYPES*/
