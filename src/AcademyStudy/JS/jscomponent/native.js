@@ -199,9 +199,24 @@ switch(Animal) {
         console.log('This animal won\'t go home');        
 }
 
+console.log('______#####________')
+//Eror handling
+function takeDay(dayVar) {
+    const dayIndex = dayVar - 1;
 
+    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    if (days[dayIndex]) {
+        return days[dayIndex];
+    }else {
+        throw 'Invalid day index';
+    }
+}
 
-
+try {
+    const dayName = takeDay(22);
+}catch(e) {
+    console.log(e);
+}
 
 
 
