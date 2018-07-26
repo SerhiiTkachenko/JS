@@ -47,6 +47,8 @@ console.log(newStr.substring(11, 17));//starting string/and end string
 console.log(newStr.substr(11, 6)); //starting string/and numbers of characters
 console.log('_______________');
 /*SYMBOL ES2015*/
+// Symbol is a unique and immutable primitive value and may be used as the key of an Object property
+
 let isAdmin = Symbol("isAdmin");
 
 let userAdmin = {
@@ -55,6 +57,27 @@ let userAdmin = {
 };
 
 console.log(userAdmin[isAdmin]);
-console.log(userAdmin.isAdmin);
+console.log(userAdmin.isAdmin); //undefined
 console.log(userAdmin);
 console.log('_______________');
+
+/*TYPE CONVERSION*/ 
+// converting to string
+console.log(String(null));
+console.log(false.toString());
+console.log(12 + "px");
+
+//converting to boolean
+console.log('_______________');
+console.log(Boolean(undefined));
+console.log(!!'text');
+
+//converting to numbers
+console.log('_______________');
+console.log(Number(true));
+console.log(parseInt('3.14'));
+console.log(parseFloat('3.14'));
+console.log(12 - '4');
+console.log(typeof(12 + '4') +" "+ 12 + '4');
+
+console.log(12 + +'4');
