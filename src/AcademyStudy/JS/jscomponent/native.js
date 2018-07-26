@@ -178,6 +178,7 @@ switch (new Date().getDay()) {
     
 }
 console.log(day);
+document.querySelector('#test').innerHTML = "It is " + day;
 
 // var Animal = prompt('Enter animal like cow,giraffe,monkey..,do not enter a number','giraffe');
 var Animal = 'Cow';
