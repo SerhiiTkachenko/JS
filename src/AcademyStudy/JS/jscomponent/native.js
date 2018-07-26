@@ -81,3 +81,47 @@ console.log(12 - '4');
 console.log(typeof(12 + '4') +" "+ 12 + '4');
 
 console.log(12 + +'4');
+console.log('_*Switch Statements*_');
+/* Switch Statements */
+let day;
+switch (new Date().getDay()) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 6:
+        day = "Saturday";
+    
+}
+
+console.log(day);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
