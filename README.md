@@ -19,9 +19,8 @@
   
   [Bootstrap4Site](https://serhiitkachenko.github.io/learning-features-of-front-end/src/AcademyStudy/Bootstrap4Site/index.html)  :nut_and_bolt:
   
-   [aksanaMullerSite](https://serhiitkachenko.github.io/learning-features-of-front-end/src/AcademyStudy/aksanaMuller/index.html)   :woman:
+   [mullerSite](https://serhiitkachenko.github.io/learning-features-of-front-end/src/AcademyStudy/aksanaMuller/index.html)   :woman:
   
-
   [flipCard](https://serhiitkachenko.github.io/learning-features-of-front-end/src/AcademyStudy/HTML%2CCSS/index5(flip3Dcard).html) :dash:
 
   [hoverEfect](https://serhiitkachenko.github.io/learning-features-of-front-end/src/AcademyStudy/HTML%2CCSS/index7(hoverEfect).html) :pencil:
