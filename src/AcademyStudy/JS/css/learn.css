@@ -5,18 +5,32 @@ body {
     background: #f3f3f3;
 }
 
+
 a {
-    color: #cb2c2c;
     text-decoration: none;
 }
-
 .list>li {
-    border-bottom: 1px solid #593dd8;
+    font-weight: bold;
 }
 
 h4 + li {
     font-size: 1.2em;
     padding: 10px;
     text-align: center;
-    background-color: #cb2c2c;
+    background-color: hsl(0, 67%, 21%);
+}
+/* CSS pseudo-class */
+a:hover {
+    word-spacing: 2.8em;
+    text-transform: uppercase;
+}
+a:link {
+color: rgb(15, 100, 21)
+}
+a:visited {
+    color: #a3f3;
+}
+
+h4 + li:hover {
+    background-color: aquamarine;
 }
