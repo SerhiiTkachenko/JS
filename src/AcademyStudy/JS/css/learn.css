@@ -10,3 +10,6 @@ a {
     text-decoration: none;
 }
 
+.list>li {
+    border-bottom: 1px solid #593dd8;
+}
