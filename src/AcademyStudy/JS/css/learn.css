@@ -13,3 +13,10 @@ a {
 .list>li {
     border-bottom: 1px solid #593dd8;
 }
+
+h4 + li {
+    font-size: 1.2em;
+    padding: 10px;
+    text-align: center;
+    background-color: #cb2c2c;
+}
