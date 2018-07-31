@@ -24,6 +24,7 @@ a:hover {
     word-spacing: 2.8em;
     text-transform: uppercase;
 }
+
 a:link {
 color: rgb(15, 100, 21)
 }
@@ -33,4 +34,32 @@ a:visited {
 
 h4 + li:hover {
     background-color: aquamarine;
+}
+/* Pseudo-selectors */
+/* span:first-child {
+    font-weight: bold;
+} */
+/* span:nth-child(odd) {
+    color:red;
+    font-weight: bold;
+}
+span:nth-child(even) {
+    color:red;
+    font-weight: bold;
+} */
+/* span:last-child {
+    color: #ee1b1bcb;
+} */
+
+/* Pseudo element */
+h3::before {
+    content: "Its > ";
+}
+h3::after {
+    content: " for list";
+}
+/* Attribute selector */
+a[href^="https://"] {
+    color: #ffc400;
+    text-transform: capitalize;
 }
