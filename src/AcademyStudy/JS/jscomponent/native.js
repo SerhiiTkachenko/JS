@@ -180,24 +180,24 @@ switch (new Date().getDay()) {
 console.log(day);
 document.querySelector('#test').innerHTML = "It is " + day;
 
-// var Animal = prompt('Enter animal like cow,giraffe,monkey..,do not enter a number','giraffe');
-// var Animal = 'Cow';
+var Animal = prompt('Enter animal like cow,giraffe,monkey..,do not enter a number','giraffe');
+var Animal = 'Cow';
 
-// switch(Animal) {
-//     case'Cow':
-//     case'giraffe':
-//     case'Monkey':
-//     case'Rabbit':
-//     case'Lion':
-//         console.log('This animal will go home.');
-//         break;
-//     case 'Spoon':
-//         console.log('A spoon is not an animal!');
-//         break;
-//     case 'Dinosaur':
-//     default:
-//         console.log('This animal won\'t go home');        
-// }
+switch(Animal) {
+    case'Cow':
+    case'giraffe':
+    case'Monkey':
+    case'Rabbit':
+    case'Lion':
+        console.log('This animal will go home.');
+        break;
+    case 'Spoon':
+        console.log('A spoon is not an animal!');
+        break;
+    case 'Dinosaur':
+    default:
+        console.log('This animal won\'t go home');        
+}
 
 console.log('______#####________')
 //Eror handling
