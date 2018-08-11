@@ -6,6 +6,7 @@
   - `[Algorithms]`
   - `[OOP]`
   - `[New features]`
+  - `[HTML5/CSS3]`
 
 ## Some intresting things:
 
