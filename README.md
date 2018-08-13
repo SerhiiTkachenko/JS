@@ -8,7 +8,7 @@
   - `[New features]`
   - `[HTML5/CSS3]`
 
-## Some intresting things:
+### Some intresting things:
 
   [FlexBox1](https://serhiitkachenko.github.io/learning-features-of-front-end/src/AcademyStudy/Flexbox/index.html)  :milky_way:
   
