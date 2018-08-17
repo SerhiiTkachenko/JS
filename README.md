@@ -22,7 +22,7 @@
   
    [mullerSite](https://serhiitkachenko.github.io/learning-features-of-front-end/src/AcademyStudy/aksanaMuller/index.html)   :woman:
   
-  [flipCard](https://serhiitkachenko.github.io/learning-features-of-front-end/src/AcademyStudy/HTML%2CCSS/index5(flip3Dcard).html) :dash:
+  [flipCard](https://serhiitkachenko.github.io/learning-features-of-front-end/src/AcademyStudy/HTML%2CCSS/index5(flip3Dcard).html) :blood:
 
   [hoverEfect](https://serhiitkachenko.github.io/learning-features-of-front-end/src/AcademyStudy/HTML%2CCSS/index7(hoverEfect).html) :pencil:
   
