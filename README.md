@@ -28,6 +28,6 @@
   
   [logo](https://serhiitkachenko.github.io/learning-features-of-front-endsrc/AcademyStudy/HTML%2CCSS/main-page.html) :shipit:
   
-  [OOPPresentation](http://taylorhakes.com/javascript-oop-presentation/#/)  :suspect:
+  [OOP_Presentation](http://taylorhakes.com/javascript-oop-presentation/#/)  :suspect:
  
 
