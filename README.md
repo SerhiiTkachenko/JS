@@ -10,7 +10,7 @@
 
 ### Some intresting things:
 
-  [FlexBox1](https://serhiitkachenko.github.io/learning-features-of-front-end/src/AcademyStudy/Flexbox/index.html)  :milky_way:
+  [FlexBox](https://serhiitkachenko.github.io/learning-features-of-front-end/src/AcademyStudy/Flexbox/index.html)  :milky_way:
   
   [FlexBox2](https://serhiitkachenko.github.io/learning-features-of-front-end/src/AcademyStudy/Flexbox/index2.html)   :fish:
   
@@ -30,4 +30,4 @@
   
   [OOP_Presentation](http://taylorhakes.com/javascript-oop-presentation/#/)  :suspect:
  
-
+  
