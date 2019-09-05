@@ -16,9 +16,9 @@
 </div>
 	<script>
 		var timeout;
-		document.ontouchmove = function(){
+		document.ontouchend = function(){
 		clearTimeout(timeout);
-		timeout = setTimeout(function(){alert("move your mouse");}, 3000);
+		timeout = setTimeout(function(){alert("Please Send Report");}, 3000);
 		}
 	</script>
    </body>
