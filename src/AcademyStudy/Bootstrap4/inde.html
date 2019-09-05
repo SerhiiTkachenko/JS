@@ -1,0 +1,25 @@
+<! DOCTYPE html> 
+<html>
+   <head>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<style type="text/css">
+			
+	</style>
+   </head>
+   <body>
+	<div id="container">
+    <div id="map_size" class="map_size">   
+        <div id="msg">
+            new records available.          
+        </div>    
+    </div>
+</div>
+	<script>
+		var timeout;
+		document.ontouchmove = function(){
+		clearTimeout(timeout);
+		timeout = setTimeout(function(){alert("move your mouse");}, 3000);
+		}
+	</script>
+   </body>
+</html>
