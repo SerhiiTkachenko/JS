@@ -10,102 +10,16 @@
 	<div id="container">
     <div id="map_size" class="map_size">   
         <div id="msg">
-           TEST         
+            new records available.          
         </div>    
     </div>
 </div>
 	<script>
-		// Using document.ready ensures that the page is fully loaded before proceeding
-$(document).ready(function () {
-
-    var alertInterval;
-
-    // function to retrieve a cookie
-    function getCookie(name) {
-        var nameEQ = name + "=";
-        var ca = document.cookie.split(';');
-        for (var i = 0; i < ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-        }
-        return null;
-    }
-
-    // function to set a cookie - optionally can specify number of hours until it expires
-    function setCookie(name, value, hours) {
-        var expires = "";
-        if (hours) {
-            var date = new Date();
-            date.setTime(date.getTime() + (hours * 1 * 60 * 1000));
-            expires = "; expires=" + date.toUTCString();
-        }
-        document.cookie = name + "=" + (value || "") + expires;
-    }
-
-
-    // Define the function that we will later use to check if the timer has expired and show an alert if so
-    function checkTimeLimit() {
-        // This will get the value of the cookie, parse it into a date format and set the variable to the timestamp from the cookie
-        var lastTimestamp = getCookie("lastAction");
-
-        // May not find a cookie (on first load for example)
-        if (lastTimestamp === null) {
-            // Set the cookie if not found
-            setLastActionTime();
-            return;
-        }
-
-
-        // This will get the current timestamp
-        var currentTimestamp = new Date();
-        currentTimestamp = currentTimestamp.getTime();
-
-        // This will compare the two and get the difference in milliseconds
-        var difference = currentTimestamp - lastTimestamp;
-
-        // Now convert the ms to hours (1000 ms in a second, 60 seconds in min, 60 mins in hour)
-        var hourDifference = difference;
-
-        // If we have a non-zero hour difference, show the alert as it has been at least an hour
-        if (hourDifference > 0) {
-            alert('It has been an hour');
-        }
-
-    }
-
-    // Define the function that will reset the timestamp in the cookie
-    function setLastActionTime() {
-        var date = new Date();
-        // Set the cookie to the current timestamp (and make it go away after 3 hours)
-        setCookie("lastAction", date.getTime().toString(), 3)
-
-        // Restart the timer
-        startTimerLoop();
-    }
-
-    // Define a timer to run every 5 minutes to check the cookie
-    function startTimerLoop() {
-        if (alertInterval !== undefined) window.clearInterval(alertInterval);
-        alertInterval = window.setInterval(function() {
-            checkTimeLimit();
-        }, 6 * 6 * 100);
-    }
-
-
-    // Check as soon as you load - this will also set the cookie if not present
-    checkTimeLimit();
-
-    // Start the timer for every 5 mins to check
-    startTimerLoop();
-
-
-
-
-});
-
-
-// On the on-click event for the button (there are many ways to accomplish this), you simply want to invoke the "setLastActionTime" function to reset your cookie - this will also restart the timer to check it
+		var timeout;
+			document.ontouchend = function(){
+			clearTimeout(timeout);
+			timeout = setTimeout(function(){alert("Please Send Report");}, 3000);
+		}
 	</script>
    </body>
 </html>
