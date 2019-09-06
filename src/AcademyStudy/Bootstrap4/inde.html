@@ -1,7 +1,7 @@
 <! DOCTYPE html> 
 <html>
    <head>
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<style type="text/css">
 			
 	</style>
@@ -18,7 +18,7 @@
 		var timeout;
 			document.ontouchend = function(){
 			clearTimeout(timeout);
-			timeout = setTimeout(function(){alert("Please Send Report");}, 3000);
+			timeout = setTimeout(function(){swal("Please Send Report","","warning");}, 3000);
 		}
 	</script>
    </body>
